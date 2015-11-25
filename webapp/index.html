@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>test</title>
-</head>
-<body>
-Test
-
-</body>
+<html ng-app="mango">
+	<head>
+		<meta charset="UTF-8">
+		<title>Mango - GUI for Weapons Dataset</title>
+		<link rel="stylesheet" type="text/css" href="resources/styles/home.css" />
+		<link rel="stylesheet" type="text/css" href="resources/bower_components/nvd3/build/nv.d3.css">
+	</head>
+	<body>
+		
+		<div ng-controller="pieChartController">
+		    <nvd3 options="options" data="data"></nvd3>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="resources/bower_components/angular/angular.js"></script>
+		<script src="resources/bower_components/d3/d3.js"></script>
+		<script src="resources/bower_components/nvd3/build/nv.d3.js"></script>
+		<script src="resources/bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+		<script src="resources/scripts/home.js"></script>
+	</body>
 </html>
